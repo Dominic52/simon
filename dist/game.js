@@ -21,7 +21,7 @@ function playSound(colour){
 
 function nextSequence(){
     $("#level-title").text("Level " + level);
-    let colour = buttonColour[Math.floor(Math.random()*3)];
+    let colour = buttonColour[Math.floor(Math.random() * 4)];
     playSound(colour);
     gamePattern.push(colour);
     level++;
