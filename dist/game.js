@@ -64,7 +64,7 @@ function checkAnswer(){
         gameStart = false;
         $("#level-title").text("Game Over!");
         setTimeout(function(){
-            $("#level-title").text("Press A Key To Restart Game");
+            $("#level-title").text("Press 'A' Key To Restart Game");
         }, 2000);
     }
 }
