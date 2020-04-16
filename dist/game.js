@@ -4,7 +4,7 @@ let gamePattern = [];
 let userClickedPattern = [];
 let gameStart = false;
 let userTurn = false;
-let level = 0;
+let level = 1;
 let currentScore = 0;
 let highscore = 0;
 
@@ -74,7 +74,7 @@ document.addEventListener("keydown", function(e){
         console.log("game start");
         gamePattern = [];
         userClickedPattern = [];
-        level = 0;
+        level = 1;
         currentScore = 0;
         gameStart = true;
         if (gameStart && !userTurn){
