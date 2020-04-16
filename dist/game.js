@@ -5,6 +5,7 @@ let userClickedPattern = [];
 let gameStart = false;
 let userTurn = false;
 let level = 0;
+let currentScore = 0;
 let highscore = 0;
 
 $(".btn").click(function(){
@@ -51,7 +52,10 @@ function animatePress(currentColour){
 function checkAnswer(){
     if (JSON.stringify(gamePattern) == JSON.stringify(userClickedPattern)){
         userClickedPattern = [];
-        highscore++;
+        currentScore++;
+        if (currentScore > highscore){
+            highscore = currentScore
+        }
         $("#level-title").text("Passed!");
         $("#highscore").text("High Score: " + highscore);
         setTimeout(nextSequence,1500);
@@ -71,6 +75,7 @@ document.addEventListener("keydown", function(e){
         gamePattern = [];
         userClickedPattern = [];
         level = 0;
+        currentScore = 0;
         gameStart = true;
         if (gameStart && !userTurn){
             nextSequence();
