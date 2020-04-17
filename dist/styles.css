@@ -21,6 +21,11 @@ body {
   color: #FEF2BF;
 }
 
+#footer{
+  color: #FEF2BF;
+  float: right;
+}
+
 .container {
   display: block;
   width: 50%;
