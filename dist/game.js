@@ -16,6 +16,7 @@ function playSound(colour){
     $("#" + colour).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100)
     let audioStr = "/sounds/" + colour + ".mp3"
     let a = new Audio(audioStr);
+    a.volume = 0.2;
     a.play();
 }
 
