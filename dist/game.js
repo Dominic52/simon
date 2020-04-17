@@ -27,6 +27,7 @@ function nextSequence(){
     gamePattern.push(colour);
     level++;
     userTurn = true;
+    console.log("why are you cheating");
     console.log(gamePattern);
 }
 
